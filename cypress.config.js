@@ -1,11 +1,20 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://api.restful-api.dev",
     setupNodeEvents(on, config) {
-      // implement node event listeners here
     },
+    baseUrl: 'https://api.restful-api.dev', 
+    specPattern: 'cypress/e2e/**/*.cy.js', 
+    defaultCommandTimeout: 20000,
+  },
+  video: true, 
+  reporter: 'mochawesome', 
+  reporterOptions: {
+    reportDir: 'cypress/reports',
+    overwrite: false,
+    html: true,
+    json: true,
+    charts: true,
   },
 });
-
