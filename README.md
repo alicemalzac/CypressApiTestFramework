@@ -42,7 +42,7 @@ cial_test_project/
 
     ```bash
     # Se fosse um repositório git
-    # git clone <url_do_repositorio>
+    # git clone [<url_do_repositorio>](https://github.com/alicemalzac/CypressApiTestFramework.git)
     # cd cial_test_project
     ```
 
