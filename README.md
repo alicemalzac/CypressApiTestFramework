@@ -41,14 +41,12 @@ cial_test_project/
 1.  **Clone o repositório (ou copie os arquivos para um diretório local):**
 
     ```bash
-    # Se fosse um repositório git
-    # git clone [<url_do_repositorio>](https://github.com/alicemalzac/CypressApiTestFramework.git)
-    # cd cial_test_project
+    git clone https://github.com/alicemalzac/CypressApiTestFramework.git
     ```
 
 2.  **Instale as dependências do projeto:**
 
-    Navegue até o diretório raiz do projeto (`cial_test_project`) e execute:
+    Navegue até o diretório raiz do projeto e execute:
 
     ```bash
     npm install
@@ -98,10 +96,10 @@ O projeto inclui um `Dockerfile` para facilitar a execução dos testes em um am
 
 1.  **Construa a imagem Docker:**
 
-    Navegue até o diretório raiz do projeto (`cial_test_project`) onde o `Dockerfile` está localizado e execute:
+    Navegue até o diretório raiz do projeto onde o `Dockerfile` está localizado e execute:
 
     ```bash
-    docker build -t cial-test-cypress .
+    docker build -t CypressApiTestFramework .
     ```
 
 2.  **Execute os testes Cypress dentro do container Docker:**
@@ -109,7 +107,7 @@ O projeto inclui um `Dockerfile` para facilitar a execução dos testes em um am
     Após a construção da imagem, você pode executar os testes com o seguinte comando:
 
     ```bash
-    docker run cial-test-cypress
+    docker run CypressApiTestFramework
     ```
 
     Este comando irá iniciar o container, instalar as dependências (se ainda não estiverem na imagem) e executar `npx cypress run`.
